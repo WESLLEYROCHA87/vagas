@@ -50,7 +50,7 @@ class Vaga
     }
 
     // Método responsável por buscar uma vaga com base em seu ID
-    public static function getvaga($id){
-
+    public static function getvaga($id)
+    {
     }
 }
