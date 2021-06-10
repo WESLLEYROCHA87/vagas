@@ -24,12 +24,6 @@ if (!$obVaga instanceof Vaga) {
     exit;
 }
 
-//echo "<pre>";
-//print_r($obVaga);
-//echo "</pre>";
-//exit;
-
-
 // Validação do POST
 if (isset($_POST['titulo'], $_POST['descricao'], $_POST['ativo'])) {
     //die('Cadastrar');
@@ -40,22 +34,11 @@ if (isset($_POST['titulo'], $_POST['descricao'], $_POST['ativo'])) {
     $obVaga->descricao = $_POST['descricao'];
     $obVaga->ativo = $_POST['ativo'];
 
-    //echo "<pre>";
-    //print_r($obVaga);
-    //echo "</pre>";
-    //exit;
-
     // Chamar o método cadastar();
     //$obVaga->cadastrar();
 
     header('location: index.php?status=success');
     exit;
-
-    // Debulga o objeto: $obVaga para saber se tudo está sendo passado corretamente       /* echo "<pre>";
-    /*print_r($obVaga);
-    echo "</pre>";
-    exit;
-    */
 }
 
 include __DIR__ . '/includes/header.php';
