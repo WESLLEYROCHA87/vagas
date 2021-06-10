@@ -74,7 +74,7 @@ class Database
         $limit = strlen($limit) ? 'LIMIT' . $limit : '';
 
 
-        // mONTA A QUERY
+        // MONTA A QUERY
         $query = 'SELECT ' . $fields . ' FROM ' . $this->table . ' ' . $where . ' ' . $order . ' ' . $limit;
 
         // Executa a Query
