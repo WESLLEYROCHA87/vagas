@@ -52,7 +52,7 @@ class Vaga
     public static function getVaga($id)
     {
         // Temos um problema aqui; Temos 2 registro no DB, se em qualquer um que clicamos ele sempre mostra o id 1.
-        return (new Database('vagas'))->select($id)
+        return (new Database('vagas'))->select('$id =' . $id)
             ->fetchObject(self::class);
     }
 }
