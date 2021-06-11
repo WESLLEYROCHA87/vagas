@@ -5,22 +5,24 @@
             <button class="btn btn-success">Voltar</button>
         </a>
     </section>
+
     <h2 class="my-3 text-center"><?= TITLE ?></h2>
 
-    <form method="post">
+    <!-- In´cio do Formulário -->
+    <form method="POST">
 
         <div class="form-group">
-            <label for="">Título</label>
+            <label>Título</label>
             <input type="text" class="form-control" name="titulo" name="<?= $obVaga->titulo ?>">
         </div>
 
         <div class=" form-group">
-            <label for="">Descrição</label>
+            <label>Descrição</label>
             <textarea class="form-control" name="descricao" rows="3"></textarea>
         </div>
 
         <div class="form-group">
-            <label for="">Status</label>
+            <label>Status</label>
 
             <div>
                 <div class="form-check form-check-inline">
@@ -33,7 +35,6 @@
                     <label class="form-control">
                         <input type="radio" name="ativo" value="n"> Inativo </label>
                 </div>
-
             </div>
         </div>
 

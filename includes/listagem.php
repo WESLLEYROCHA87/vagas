@@ -10,12 +10,13 @@ foreach ($vagas as $vaga) {
                     <td>' . ($vaga->ativo == 's' ? 'Ativo' : 'Inativo') . ' </td>
                     <td>' . date('d/m/Y à\s H:i:s', strtotime($vaga->data)) . ' </td>
                     <td>
-                    <a href="editar.php?id=' . $vaga->id . '"?> <button type="button" class="btn btn-primary">Editar </button> </a>
-                    <a href="excluir.php?id=' . $vaga->id . '"?>
-                    <button type="button" class="btn btn-danger">Excluir </button>
-                    </a>
-                    </td>
-                    </tr>';
+                    <a href="editar.php?id=' . $vaga->id . '"?> <button type="button" class="btn btn-primary">Editar
+</button> </a>
+<a href="excluir.php?id=' . $vaga->id . '" ?>
+    <button type="button" class="btn btn-danger">Excluir </button>
+</a>
+</td>
+</tr>';
 }
 
 ?>
