@@ -6,6 +6,7 @@ define('TITLE', 'Cadastrar Vaga');
 
 use \App\Entity\Vaga;
 
+
 // Validação do POST
 if (isset($_POST['titulo'], $_POST['descricao'], $_POST['ativo'])) {
     //die('Cadastrar');

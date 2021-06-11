@@ -14,8 +14,14 @@ if (!isset($_GET['id']) or !is_numeric($_GET['id'])) {
 
 
 // CONSULTA A VAGA
-$obVaga = new Vaga;
+//$obVaga = new Vaga;
 $obVaga = Vaga::getVaga($_GET['id']);
+
+echo "<pre>";
+print_r($obVaga);
+echo "</pre>";
+exit;
+
 
 
 // Validação da vaga

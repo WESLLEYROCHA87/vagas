@@ -7,7 +7,6 @@ use \PDO;
 
 class Vaga
 {
-
     /* Identificador único da vaga */
     public $id;
 
@@ -52,7 +51,8 @@ class Vaga
     // Método responsável por buscar uma vaga com base em seu ID
     public static function getVaga($id)
     {
-        return (new Database('vagas'))->select('id = ' . $id)
+        // Temos um problema aqui; Temos 2 registro no DB, se em qualquer um que clicamos ele sempre mostra o id 1.
+        return (new Database('vagas'))->select($id)
             ->fetchObject(self::class);
     }
 }

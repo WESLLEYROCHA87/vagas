@@ -9,11 +9,11 @@ class Database
 {
     const HOST = 'localhost';
 
-    const NAME = 'wdev_vagas';
+    const NAME = 'wdev-vagas';
 
-    const USER = 'coziind';
+    const USER = 'root';
 
-    const PASS = 'adm';
+    const PASS = '';
 
     // Nome da tabela a ser manipulada
     private $table;
